@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/avatars")
+      .get("https://dcverse.onrender.com/api/avatars")
       .then((res) => setUsers(res.data))
       .catch(() => {
         axios
